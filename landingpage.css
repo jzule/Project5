@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    
+
+}
+
+header {
+    background-color: rgba(220, 220, 220, 0.4);
+    box-shadow: 0 0 3px rgb(169,169,169);
+    height: 115px;
+    width: 100%;
+}
+
+.navbar{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    float: right;
+    padding-right: 3rem;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-top: -80px;
+    margin-left: 20px;
+    filter: grayscale(100%);
+}
+
+h1 {
+    text-align: center;
+    color: gray;
+    font-size: 75px;
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+
+
+#pic{
+    width: 50%;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 1rem;
+    margin: 30%;
+    animation: fade-in-right 1.5s forwards;
+}
+
+@keyframes fade-in-right {
+    0% {
+        transform: translateX(-10%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.paragraph{
+    padding-top: 4rem;
+    margin-top: 4rem;
+    margin-left: 10rem;
+    padding-left: 10rem;
+    width: 60%;
+    text-align: justify;
+    border-left: groove;
+    font-size: larger;
+    font-family: 'Quicksand', sans-serif;
+    text-indent: 1.5rem;
+    animation: fade-in-left 1.5s forwards;
+    
+}
+
+
+
+p:hover{
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+p:focus{
+    font-size: xx-large;
+    font-weight: normal;
+}
+
+
+
+@keyframes fade-in-left {
+    0% {
+        transform: translateX(10%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.footer {
+    background-color: rgba(220, 220, 220, 0.4);
+    box-shadow: 0 0 3px rgb(169,169,169);
+    height: 20rem;
+    margin-top: 10rem;
+    width: 100%;
+    
+}
+
+.footdiv {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#contact{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+} 
+
+input {
+    height: 1.5rem;
+    width: 15rem;
+}
+
+.submit {
+    
+    width: 3rem;
+
+}
+
+#footnav {
+    float: right;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    padding-right: 3rem;
+}
